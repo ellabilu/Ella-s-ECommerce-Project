@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ECommerce Checkpoint 3</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://boxicons.com/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/cyc4viu.css">
+  <link rel="stylesheet" href="https://use.typekit.net/cyc4viu.css">
+   <style>
+    .success-message {
+      color: #28a745;
+      background-color: #d4edda;
+      border-color: #c3e6cb;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Home Icon -->
+    <a class="navbar-brand" href="/">
+      <i class='bx bx-home'></i> Experiential Learning
+    </a>
+
+    <!-- Add a button for responsive navigation on smaller screens -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Person Icon -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <!-- You can customize your navigation links here -->
+      <ul class="navbar-nav">
+        <!-- Profile dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/customer" id="profileDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class='bx bx-user'></i> Profile
+          </a>
+          <div class="dropdown-menu" aria-labelledby="profileDropdown">
+  <a class="dropdown-item" href="/logout">Logout</a>
+  <a class="dropdown-item" href="/customer">History</a>
+</div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/showCart">
+            <i class='bx bx-cart'></i> Cart
+          </a>
+        </li>
+        <!-- Add more navigation links as needed -->
+      </ul>
+    </div>
+  </nav>
+
+    <% if (flashMessages.success && flashMessages.success.length > 0) { %>
+  <div class="alert alert-success">
+    <%= flashMessages.success[0] %>
+  </div>
+<% } %>
+
+<% if (flashMessages.error && flashMessages.error.length > 0) { %>
+  <div class="alert alert-danger">
+    <%= flashMessages.error[0] %>
+  </div>
+<% } %>
+
+    <h2>Customer Profile</h2>
+    <h3>Thank you for being a loyal customer</h3>
+    <h2><%= user.username %>'s Purchase History</h2>
+    <% if (user.purchases && user.purchases.items && user.purchases.items.length > 0) { %>
+
+    <% // Aggregation calculations for total quantity and total price %>
+    <% const uniqueItems = new Set(); %>
+    <% let totalQuantity = 0; %>
+    <% let totalPrice = 0; %>
+
+    <% user.purchases.items.forEach(item => { %>
+    <div class="col-md-6 mb-4 product-square text-center custom-product-tile mx-auto">
+      <h5><%= item.productId.name %></h5>
+      <p class="product-description"><%= item.productId.description %></p>
+      <p><strong>Price:</strong> $<%= item.price.toFixed(2) %> ——— <strong>Quantity:</strong> <%= item.quantity %></p>
+      <p><strong>Total:</strong> $<%= (item.price * item.quantity).toFixed(2) %></p>
+    </div>
+
+    <% uniqueItems.add(item.productId.toString()); %>
+    <% totalQuantity += item.quantity; %>
+    <% totalPrice += item.price * item.quantity; %>
+    <% }); %>
+
+    <% if (user.purchases.items.length > 0) { %>
+    <!-- Add the fixed-bottom and bg-white classes -->
+    <div class="col-md-12 mt-4 fixed-bottom bg-white"> 
+      <h7><strong>Aggregation:</strong> You've purchased <%= uniqueItems.size %> unique items for a total quantity of <%= totalQuantity %>. In total, you've spent $<%= totalPrice.toFixed(2) %>.</h7>
+    </div>
+    <% } %>
+
+    <% } else { %>
+    <h7>Your purchase history is empty.</h7>
+    <% } %>
+  </div>
+  <!-- Add your other body content and scripts here -->
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+.product {
+  text-align: center;
+}
+
+.product-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  align-items: center;
+  color: blue;
+  margin-top: 10px; /* Add some top margin */
+}
+
+h1 {
+  font-family: "mestiza", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  background-color: #092661;
+}
+
+.product-square {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.btn-primary,
+.btn-secondary {
+  margin-top: 10px;
+}
+
+body {
+  padding-top: 56px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.bx-cart {
+  color: red;
+}
+
+.madimi-one-regular {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a,
+h5 {
+  font-family: "silver-streak-variable", sans-serif;
+}
+
+.custom-product-tile {
+  background-color: #a1d7f0;
+}
+
+h2 {
+  font-family: "silver-streak-variable", sans-serif;
+  color: #a1d7f0;
+  text-align: center;
+  padding-top: 25px;
+  font-size: 40px;
+}
+
+p {
+  font-family: "fillip", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+label {
+  font-family: "fillip", cursive;
+  font-weight: 400;
+  font-style: italic;
+  color: white;
+}
+
+h7 {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font-family: "silver-streak-variable", sans-serif;
+}
+
+#minPrice,
+#maxPrice {
+  width: 80px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 5px;
+}
+
+#filterButton,
+#sortButton {
+  margin-top: 10px;
+}
+
+.custom-width {
+  width: 100%;
+}
+
+.narrower-button {
+  width: 80px;
+  margin: 10px auto; /* Center the button */
+}
+
+.narrower-input {
+  width: 60px;
+  margin: 10px auto; /* Center the input */
+}
+
+#sortDropdown {
+  width: 150%;
+}
+
+h3 {
+  color: white;
+  font-family: "fillip", cursive;
+  font-size: 20px;
+  text-align: center;
+}

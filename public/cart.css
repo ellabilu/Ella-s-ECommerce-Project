@@ -1,0 +1,103 @@
+.product {
+  text-align: center;
+}
+
+.product-image {
+  width: 200px; /* Adjust this size according to your preference */
+  height: 200px; /* Keep the same size for width and height to ensure a square */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  border-radius: 8px;
+  margin-bottom: 10px; /* Add margin for spacing between products */
+}
+
+button{
+    align-items: center;
+    color: blue;
+}
+
+h1{
+    font-family: "mestiza", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+body{
+    background-color: #092661
+}
+
+/* Add this custom CSS for product squares */
+.product-square {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #000; /* Add border */
+}
+
+
+/* Style for buttons */
+.btn-primary,
+.btn-secondary {
+  margin-top: 10px; /* Add some space between buttons and product information */
+}
+
+ body {
+      padding-top: 56px; /* Adjust the padding based on your navbar height */
+    }
+
+.navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+
+    }
+
+ .navbar-brand {
+      font-size: 24px; /* Adjust the font size as needed */
+      font-weight: bold;
+    }
+
+.bx-cart {
+    color: red;
+}
+
+
+.madimi-one-regular {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a, h5{
+    font-family: "silver-streak-variable", sans-serif;
+   
+}
+
+.custom-product-tile {
+  background-color: #a1d7f0;
+}
+
+h2{
+    font-family:  "silver-streak-variable", sans-serif;
+    color: #a1d7f0;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 40px;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+th, label{
+    font-family:  "silver-streak-variable", sans-serif;
+    color: white; 
+    font-size: 20px;
+}
+
+tr{
+    color: white;
+}
+
+

@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://i.pinimg.com/736x/4a/1d/71/4a1d71e84353792113c1e8cd50a61783.jpg') center/cover no-repeat fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1, a {
+    color: white; 
+}
+
+form {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: red; /* Change the label text color to your desired color */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9); /* Add a text shadow */
+}
+
+/* Add this CSS to style the input placeholders */
+input::placeholder {
+    color: #ced4da;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-content: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 15px;
+    color: #495057;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

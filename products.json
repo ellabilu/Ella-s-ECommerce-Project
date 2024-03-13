@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Modeling with Milo Manheim",
+    "price": 50,
+    "stock": 2,
+    "description": "Unleash your inner model with this exclusive session featuring actor Milo Manheim. Discover the secrets of posing, runway techniques, and kickstart your journey to a successful modeling career.",
+    "imageLink": "https://i.pinimg.com/736x/3f/9a/4b/3f9a4bde8f3d31844275eda05372b325.jpg"
+  },
+  {
+    "name": "Tour of Paris with Lucas Bravo",
+    "price": 100,
+    "stock": 5,
+    "description": "Embark on a breathtaking tour of Paris guided by actor Lucas Bravo. Immerse yourself in the beauty of iconic landmarks, hidden gems, and experience the enchanting charm of the City of Lights like never before.",
+    "imageLink": "https://i.pinimg.com/564x/c1/4d/1a/c14d1a5fa15e90701057d548d591cca4.jpg"
+  },
+  {
+    "name": "Rowing Lessons with Callum Turner",
+    "price": 25,
+    "stock": 10,
+    "description": "Dive into the world of rowing with actor Callum Turner. Receive personalized lessons to enhance your rowing skills, whether you're a beginner or looking to improve your technique.",
+    "imageLink": "https://i.pinimg.com/564x/74/c4/e1/74c4e1c5b9cc46ceb2e6cc83c836a431.jpg"
+  },
+  {
+    "name": "Reporting with Logan Huntzberger",
+    "price": 50,
+    "stock": 8,
+    "description": "Sharpen your journalism skills with a session on reporting with Logan Huntzberger. Gain insights into investigative reporting, interview techniques, and the dynamics of media.",
+    "imageLink": "https://i.pinimg.com/564x/d2/47/8e/d2478e49e051e2e3b74a3297c90c698b.jpg"
+  },
+  {
+    "name": "Paddock Day with Charles Leclerc",
+    "price": 200,
+    "stock": 24,
+    "description": "Immerse yourself in the thrilling world of Formula 1 with a Paddock Day experience alongside racing driver Charles Leclerc. Get an exclusive behind-the-scenes look at the fast-paced world of motorsports.",
+    "imageLink": "https://i.pinimg.com/564x/ce/1d/62/ce1d626c49b0018820bcc96fcc63f709.jpg"
+  },
+  {
+    "name": "Tax Fraud with Nate Archibald",
+    "price": 5,
+    "stock": 1,
+    "description": "Join Nate Archibald for an unconventional session exploring the intricacies of tax fraud.",
+    "imageLink": "https://i.pinimg.com/564x/ea/cf/53/eacf537116a2f48500dc50f656459c54.jpg"
+  },
+  {
+    "name": "Bring Derek Shepherd Back to Life",
+    "price": 150,
+    "stock": 1,
+    "description": "Experience the impossible with this fictional service to bring Derek Shepherd back to life. (Note: This is a fictional product based on the Grey's Anatomy character.)",
+    "imageLink": "https://i.pinimg.com/564x/3f/c0/a3/3fc0a31dcea4a8b0e81c7dcaebf1e0ed.jpg"
+  },
+  {
+    "name": "Becoming a Dictator with Coriolanus Snow",
+    "price": 75,
+    "stock": 11,
+    "description": "Embark on a journey to explore the complexities of dictatorship with Coriolanus Snow. (Note: This is a fictional product and does not endorse harmful activities or ideologies.)",
+    "imageLink": "https://i.pinimg.com/564x/37/60/a9/3760a9057034d6d83165fc91d7bde7ad.jpg"
+  },
+  {
+    "name": "Winning Wimbledon with Carlos Alcaraz",
+    "price": 125,
+    "stock": 13,
+    "description": "Train with tennis sensation Carlos Alcaraz and master the skills and strategies needed to clinch victory at Wimbledon. This exclusive session is perfect for aspiring tennis champions.",
+    "imageLink": "https://i.pinimg.com/564x/8c/34/e8/8c34e85a18bcdc00094e92fe3e7dfd2e.jpg"
+  }
+]
